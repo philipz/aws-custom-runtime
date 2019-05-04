@@ -30,7 +30,7 @@ spec:
     default: "function.handler"
   steps:
   - name: dockerfile
-    image: gcr.io/kaniko-project/executor@sha256:30ba460a034a8051b3222a32e20cb6049741e58384e3adf8c8987c004e2f2ab9
+    image: gcr.io/kaniko-project/executor@sha256:abf49356a3151a9c85f7a7ed37ec975f7c81dc2a4e3efab2f534e7749d8489d5
     command:
     - /busybox/sh
     args:
@@ -52,7 +52,7 @@ spec:
         CMD ["/opt/aws-custom-runtime"]
       EOF
   - name: export
-    image: gcr.io/kaniko-project/executor@sha256:30ba460a034a8051b3222a32e20cb6049741e58384e3adf8c8987c004e2f2ab9
+    image: gcr.io/kaniko-project/executor@sha256:abf49356a3151a9c85f7a7ed37ec975f7c81dc2a4e3efab2f534e7749d8489d5
     args:
     - --context=/workspace/${DIRECTORY}
     - --dockerfile=/workspace/${DIRECTORY}/Dockerfile
