@@ -23,7 +23,7 @@ tm deploy service lambda-bash -f https://github.com/triggermesh/aws-custom-runti
 ```
 
 In output you'll see URL that you can use to access `example/function.sh` function
-
+`curl http://lambda-bash.default.YOURDOMAIN/ -H 'content-type: application/json' -d '{"text":"Hello"}'`
 
 ### AWS Lambda RUST example
 
